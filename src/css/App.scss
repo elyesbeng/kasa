@@ -1,0 +1,102 @@
+#root{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.banner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  nav{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 10px;
+  }
+}
+
+.sectionEntete{
+  display: flex;
+  padding: 25px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionLogements{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px 30px 50px 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  background-color: #f2f2f2;
+  margin: 50px 25px 0px 25px;
+  border-radius: 15px;
+  position: relative;
+  div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 30%;
+    a{
+      height: 300px;
+      display: block;
+      position: relative;
+      border-radius: 20px;
+        img{
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+      }
+    }
+    p{
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      width: 50%;
+      color: white;
+    }
+  }
+}
+
+.numeroSlide{
+  position: absolute;
+  bottom: 10px;
+}
+
+.fleche-gauche{
+  position: absolute;
+  left: 10px;
+  height: 50px;
+  color: white;
+}
+
+.fleche-droite{
+  position: absolute;
+  right: 10px;
+  height: 50px;
+  color: white;
+}
+
+footer{
+  background-color: black;
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 20px;
+}
