@@ -47,7 +47,6 @@ function CreationLogements() {
             <a className='LogementsCards' id={logement.id} href='../public/pageLogement.html'>
               <img src={logement.cover} alt={logement.title} />
               <p>{logement.title}</p>
-              <Link to="/PageLogements">Aller à la deuxième page</Link>
               {/* Affichez d'autres propriétés de logement selon vos besoins */}
             </a>
           </div>
