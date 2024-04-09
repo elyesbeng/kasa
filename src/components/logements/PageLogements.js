@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Banner from './banner';
-import Footer from './footer';
-import logements from '../logements.json';
+import Banner from '../banner/banner';
+import Footer from '../footer/footer';
+import logements from '../../logements.json';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 

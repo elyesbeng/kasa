@@ -1,0 +1,13 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.banner nav {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding: 10px;
+}

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import logements from '../logements.json'; // Importez le fichier JSON
+import logements from '../../logements.json'; // Importez le fichier JSON
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons"; // Importez les icônes solides
-import { Link } from 'react-router-dom';
+
 
 function CreationLogements() {
     const [startIndex, setStartIndex] = useState(0); // État pour suivre l'indice de début de la liste logementsLimites
