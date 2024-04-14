@@ -1,13 +1,14 @@
 import React from 'react';
 import './banner.scss';
-import { Link } from 'react-router-dom'
+import Logo from '../images/LOGO.png';
+
 
 function Banner() {
     return <header className="banner">
-                <h1>Logo</h1>
+                <img src={Logo} className='Logo'></img>
                 <nav>
                     <a href='index.html'>Accueil</a>
-                    <Link to="/Apropos">A propos</Link>
+                    <a href='#'>A propos</a>
                 </nav>
             </header>
 }

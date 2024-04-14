@@ -1,6 +1,10 @@
+import imgBanner from '../images/imgBanner.png';
+import './banner.scss';
+
 function entete(){
     return <section className='sectionEntete'>
-                <h1>Chez vous partout ailleurs</h1>
+                <img src={imgBanner} className='imgBanner'></img>
+                <h1 className='titreBanner'>Chez vous partout ailleurs</h1>
             </section>
 };
 
