@@ -9,7 +9,26 @@
   gap: 15px;
 }
 
+.CarouselImages {
+  display: contents;
+}
+
+.fleche-gauche {
+  position: absolute;
+  left: 200px;
+  top: 40%;
+  color: white;
+}
+
+.fleche-droite {
+  position: absolute;
+  right: 200px;
+  top: 40%;
+  color: white;
+}
+
 .imageLogement {
+  position: relative;
   height: 415px;
   width: 80%;
   border-radius: 15px;
@@ -23,6 +42,9 @@ h1, p {
 
 .titreEtLocalisation {
   padding-left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .titreEtLocalisation .titreLogement {
@@ -43,27 +65,60 @@ h1, p {
 .tag {
   height: 25px;
   background-color: #FF6060;
+  color: white;
   padding: 5px 10px;
   border-radius: 25px;
 }
 
+.DescriptionEtEquipements {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  width: 80%;
+  align-self: center;
+}
+
 .dropdown {
-  padding-left: 10%;
+  width: 100%;
 }
 
 .dropdown button {
   border: none;
   background-color: #FF6060;
   color: white;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   padding: 10px 20px 10px 10px;
   border-radius: 5px;
-  width: 35%;
+  width: 80%;
 }
 
 .dropdown p {
-  max-width: 35%;
+  max-width: 72%;
   border-radius: 10px 10px 5px 5px;
   background: var(--Gray, rgba(246, 246, 246, 0.45));
   padding: 10px 20px 10px 10px;
+}
+
+.noteEtProprietaire {
+  padding-right: 20%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+}
+
+.noteEtProprietaire img {
+  height: 64px;
+  width: 64px;
+  border-radius: 50px;
+}
+
+.noteEtProprietaire p {
+  max-width: 50%;
+  color: #FF6060;
+}
+
+.rate {
+  display: flex;
 }

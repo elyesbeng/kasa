@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 
-function DropdownDescription({ description }) {
+function DropdownDescription({ title, description }) { // Ajoutez la prop `title` ici
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -14,11 +14,11 @@ function DropdownDescription({ description }) {
       <button onClick={toggleDropdown}>
                 {isDropdownOpen ? (
                     <>
-                        Description <FontAwesomeIcon icon={faAngleUp} />
+                        {title} <FontAwesomeIcon icon={faAngleUp} />
                     </>
                 ) : (
                     <>
-                        Description <FontAwesomeIcon icon={faAngleDown} />
+                        {title} <FontAwesomeIcon icon={faAngleDown} />
                     </>
                 )}
             </button>
