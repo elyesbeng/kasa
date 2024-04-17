@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Banner from '../banner/banner';
-import Footer from '../footer/footer';
 import logements from '../../logements.json';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faStar } from "@fortawesome/free-solid-svg-icons";
@@ -20,6 +18,7 @@ function PageLogements() {
     };
 
     const currentLogement = logements[currentIndex];
+    console.log(currentIndex);
     const currentPicture = currentLogement.pictures[currentIndex];
 
     return (

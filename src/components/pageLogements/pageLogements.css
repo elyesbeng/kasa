@@ -15,14 +15,12 @@
 
 .fleche-gauche {
   position: absolute;
-  left: 200px;
   top: 40%;
   color: white;
 }
 
 .fleche-droite {
   position: absolute;
-  right: 200px;
   top: 40%;
   color: white;
 }
@@ -121,4 +119,5 @@ h1, p {
 
 .rate {
   display: flex;
+  color: #FF6060;
 }

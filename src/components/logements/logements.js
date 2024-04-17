@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import logements from '../../logements.json'; // Importez le fichier JSON
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons"; // Importez les icônes solides
+import './App.scss'
+import { Link } from 'react-router-dom';
 
 
 function CreationLogements() {
@@ -44,11 +46,11 @@ function CreationLogements() {
         {logementsLimites.map((logement, index) => (
           // Utilisation de la clé (key) pour identifier de manière unique chaque élément de la liste
           <div key={index}>
-            <a className='LogementsCards' id={logement.id} href='../public/pageLogement.html'>
+            <Link className='LogementsCards' id={logement.id} to={`/pageLogement/${logement.id}`}>
               <img src={logement.cover} alt={logement.title} />
               <p>{logement.title}</p>
               {/* Affichez d'autres propriétés de logement selon vos besoins */}
-            </a>
+            </Link>
           </div>
         ))}
         <p className='numeroSlide'> {numeroSlide}/4 </p>
