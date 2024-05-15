@@ -5,10 +5,19 @@
 
 }
 
+body{
+    margin: 0px;
+}
 .sectionPageLogements{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    position: relative;
+}
+
+.numeroSlide{
+    top: -125px;
+    color: white;
 }
 
 .CarouselImages{
@@ -17,14 +26,18 @@
 
 .fleche-gauche {
     position: absolute;
-    top: 40%;
+    top: 25%;
+    left: 200px;
     color: white;
+    font-size: 35px;
 }
 
 .fleche-droite {
     position: absolute;
-    top: 40%;
+    top: 25%;
+    right: 200px;
     color: white;
+    font-size: 35px;
 }
 
 .imageLogement {
@@ -76,31 +89,14 @@ h1, p{
     justify-content: space-between;
     width: 80%;
     align-self: center;
+    gap: 20px;
 }
 
-.dropdown{
-    width: 100%;
-    button{
-        border: none;
-        background-color: #FF6060;
-        color: white;
-        font-family: "Montserrat";
-        padding: 10px 20px 10px 10px;
-        border-radius: 5px;
-        width: 80%;
-    }
-    p{
-        max-width: 72%;
-        border-radius: 10px 10px 5px 5px;
-        background: var(--Gray, rgba(246, 246, 246, 0.45));
-        padding: 10px 20px 10px 10px;
-    }
-}
 
 .noteEtProprietaire{
     padding-right: 20%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     img{
@@ -114,7 +110,56 @@ h1, p{
     }
 }
 
+.Proprietaire{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+
 .rate{
     display: flex;
     color: #FF6060
+}
+
+@media (max-width: 376px) {
+    .dropdown{
+        flex-direction: column;
+            button{
+            width: 100%;
+            }
+    }
+
+   .noteEtProprietaire{
+    padding-right: 0px; 
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+   }
+
+   .titreEtLocalisation{
+    flex-direction: column;
+   }
+
+   .DescriptionEtEquipements{
+    flex-direction: column;
+   }
+
+   .fleche-droite2{
+    right: 60px;
+    top: 25%;
+   }
+
+   .fleche-gauche2{
+    left: 60px;
+    top: 25%;
+
+   }
+
+   .numeroSlide{
+    top: 0px;
+    bottom: 0px;
+   }
 }

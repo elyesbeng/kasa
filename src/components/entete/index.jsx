@@ -1,5 +1,5 @@
 import React from 'react';
-import './banner.scss';
+import './entete.scss';
 import Logo from '../images/LOGO.png';
 import { Link } from 'react-router-dom';
 

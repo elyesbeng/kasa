@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 function CreationLogements() {
-    const [startIndex, setStartIndex] = useState(0); // État pour suivre l'indice de début de la liste logementsLimites
+    {/**const [startIndex, setStartIndex] = useState(0); // État pour suivre l'indice de début de la liste logementsLimites
     const [numeroSlide, setNumeroSlide] = useState(1);
 
     // Limiter le nombre d'éléments à afficher en fonction de l'indice de début
@@ -37,13 +37,12 @@ function CreationLogements() {
             setStartIndex(0);
             setNumeroSlide(1); // Mettre à jour le numéro de slide en conséquence
         }
-    };
+    };*/}
   
     return (
       <section className='sectionLogements'>
-        <FontAwesomeIcon icon={faAngleLeft} className='fleche-gauche' onClick={handleLeftArrowClick} /> {/* Ajoutez un gestionnaire d'événements onClick */}
         {/* Utilisation de la méthode map pour créer des éléments JSX pour chaque logement */}
-        {logementsLimites.map((logement, index) => (
+        {logements.map((logement, index) => (
           // Utilisation de la clé (key) pour identifier de manière unique chaque élément de la liste
           <div key={index}>
             <Link className='LogementsCards' id={logement.id} to={`/pageLogement/${logement.id}`}>
@@ -53,8 +52,6 @@ function CreationLogements() {
             </Link>
           </div>
         ))}
-        <p className='numeroSlide'> {numeroSlide}/4 </p>
-        <FontAwesomeIcon icon={faAngleRight} className='fleche-droite' onClick={handleRightArrowClick} /> {/* Ajoutez un gestionnaire d'événements onClick */}
       </section>
     );
 }

@@ -1,17 +1,44 @@
+.imgBanner{
+    position: relative;
+    clip-path: border-box;
+    border-radius: 25px;
+    opacity: 1;
+    height: 223px;
+    width: 80%;
+    filter: brightness(50%);
+  }
 
-    .banner{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px;
-        nav{
-          display: flex;
-          flex-direction: row;
-          gap: 25px;
-          padding: 10px;
-        }
-      }
+.titreBanner{
+    position: absolute;
+    color: white;
+}
 
-    .Logo{
-      height: 68px;
+.sectionEntete{
+    display: flex;
+    padding: 25px;
+    align-self: center;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+  @media (max-width: 376px) {
+    .sectionEntete{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
     }
+
+
+    .imgBanner{
+      height: 115px;
+    }
+
+    .titreBanner{
+      max-width: 70%;
+    }
+
+    
+  }
