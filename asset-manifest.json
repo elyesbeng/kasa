@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.67740bb2.css",
+    "main.js": "/static/js/main.03e1f172.js",
+    "static/media/imgBanner.png": "/static/media/imgBanner.1168be13650bb18b456e.png",
+    "static/media/imageBannerApropos.png": "/static/media/imageBannerApropos.ef5dc982743b7363d7bd.png",
+    "static/media/Montserrat-Italic-VariableFont_wght.ttf": "/static/media/Montserrat-Italic-VariableFont_wght.7451547bd28d8dddbeea.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "index.html": "/index.html",
+    "main.67740bb2.css.map": "/static/css/main.67740bb2.css.map",
+    "main.03e1f172.js.map": "/static/js/main.03e1f172.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67740bb2.css",
+    "static/js/main.03e1f172.js"
+  ]
+}
