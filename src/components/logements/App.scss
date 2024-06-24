@@ -10,7 +10,11 @@ a{
 }
 
 
-
+.homePage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .App{
   display: flex;
@@ -27,7 +31,7 @@ a{
   justify-content: center;
   gap: 25px;
   background-color: #f2f2f2;
-  margin: 50px 25px 0px 25px;
+  margin: 50px 50px 0px 50px;
   border-radius: 15px;
   position: relative;
   div{

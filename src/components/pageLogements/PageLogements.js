@@ -6,7 +6,7 @@ import './pageLogements.scss';
 import MenuDeroulant from '../menuDeroulant/menuDeroulant';
 import Notation from '../notation/Notation';
 import { useParams, Navigate } from 'react-router-dom';
-import PageErreur from '../pageErreur';
+
 
 
 function PageLogements() {
@@ -37,7 +37,6 @@ function PageLogements() {
 
     return (
         <div>    
-            {/**{ !currentLogement && <Navigate replace to='/PageErreur' />}*/}
             <section className='sectionPageLogements'>
             <div className='CarouselImages'>
                 <img src={currentLogement.pictures[SelectPicture]} className='imageLogement' />

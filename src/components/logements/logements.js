@@ -41,14 +41,11 @@ function CreationLogements() {
   
     return (
       <section className='sectionLogements'>
-        {/* Utilisation de la méthode map pour créer des éléments JSX pour chaque logement */}
         {logements.map((logement, index) => (
-          // Utilisation de la clé (key) pour identifier de manière unique chaque élément de la liste
           <div key={index}>
             <Link className='LogementsCards' id={logement.id} to={`/pageLogement/${logement.id}`}>
               <img src={logement.cover} alt={logement.title} />
               <p>{logement.title}</p>
-              {/* Affichez d'autres propriétés de logement selon vos besoins */}
             </Link>
           </div>
         ))}
